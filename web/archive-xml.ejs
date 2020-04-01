@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>DC media archive bot</name>
+  </author>
+  <title>Delta Chat Media Archive</title>
+  <id>urn:uuid:60a76c80-d399-11d9-b93C-0003939e0af6</id>
+  <updated><%= updated_at %></updated>
+
+  <% files.forEach(function(file) { %>
+    <entry>
+      <title><%= file.name %></title>
+      <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</id>
+      <updated>2003-12-13T18:30:02Z</updated>
+      <content type="html">
+        <![CDATA[
+          <img src="<%= fileBaseUrl %>/<%= file.name %>" />
+        ]]>
+      </content>
+    </entry>
+  <% }) %>
+</feed>

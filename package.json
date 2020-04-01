@@ -1,0 +1,17 @@
+{
+  "name": "deltachat-media-webarchive",
+  "version": "0.1.0",
+  "description": "This Delta Chat bot archives all media files that it receives, and builds a HTML-page to view them all.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npx mocha --exit",
+    "start": "node src/index"
+  },
+  "author": "Delta Chat developers",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "deltachat-node-bot-base": "git://github.com/deltachat-bot/deltachat-node-bot-base.git",
+    "ejs": "^3.0.1"
+  },
+  "devDependencies": {}
+}
