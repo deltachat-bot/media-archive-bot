@@ -16,7 +16,7 @@
 
   <% files.forEach(function(file) { %>
     <% if (file.type === 'image') { %>
-    <img src='<%= fileBaseUrl %>/<%= file.name %>' style='max-width: 300px' />
+    <img src='<%= fileBaseUrl %>/<%= file.name %>' class='col-desk-3 col-tab-3 col-mob-1' />
     <% } else if (file.type === 'document') { %>
       <a href='<%= fileBaseUrl %>/%<= file.name %>'><%= file.extension.toUpperCase() %></a>
     <% } %>
