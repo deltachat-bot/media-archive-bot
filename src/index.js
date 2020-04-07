@@ -76,6 +76,6 @@ const dc_started = deltachat.start(async (chat, message) => {
     }
   )
   fs.writeFileSync(feedFile, xml)
-  fs.copyFile(path.join(__dirname, '../web/grid.scss'), path.join(docRoot, 'grid.scss'))
+  fs.copyFileSync(path.join(__dirname, '../web/grid.scss'), path.join(docRoot, 'grid.scss'))
   log("finished generating archive files")
 })
